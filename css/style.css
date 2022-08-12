@@ -18,6 +18,9 @@ body {
     font-weight: 400;
     size: 14px;
     font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    color: #131313;
 }
 .container {
     max-width: 1220px;
@@ -35,9 +38,14 @@ body {
 .menu__list {
     display: flex;
 }
-.menu__item {
-
+.menu__item + .menu__item {
+    padding-left: 10px;
 }
 .menu__link {
+    padding: 0 20px;
     text-transform: uppercase;
+}
+.menu__link:hover {
+    background-color: #131313;
+    color: #fff;
 }
