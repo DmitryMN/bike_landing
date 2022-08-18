@@ -140,3 +140,33 @@ body {
     line-height: 14px;
     margin: auto 0;
 }
+
+.info {
+    margin-bottom: 150px;
+}
+
+.info__inner {
+    display: flex;
+}
+.info__img {
+    margin: 0 60px 0 0;
+}
+.info__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info__item:not(:last-child) {
+    margin: 0 0 50px 0;
+}
+.info__item-title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0 0 10px 0;
+}
+.info__item-text {
+    line-height: 16px;
+    margin: 0;
+}
