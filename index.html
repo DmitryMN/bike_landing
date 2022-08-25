@@ -23,13 +23,13 @@
                 <nav class="menu">
                     <ul class="menu__list">
                         <li class="menu__item">
-                            <a class="menu__link" href="">Описание</a>
+                            <a class="menu__link" href="#info">Описание</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link" href="">Характеристики</a>
+                            <a class="menu__link" href="#characteristics">Характеристики</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link" href="">Стоимость</a>
+                            <a class="menu__link" href="#price">Стоимость</a>
                         </li>
                     </ul>
                 </nav>
@@ -89,7 +89,7 @@
             </div>
         </div>
     </section>
-    <section class="info">
+    <section class="info" id="info">
         <div class="container">
             <div class="info__inner">
                 <img class="info__img" src="images/info.jpg" alt="info">
@@ -153,7 +153,7 @@
             </div>
         </div>
     </section>
-    <section class="characteristics">
+    <section class="characteristics" id="characteristics">
         <div class="container">
             <h4 class="characteristics__head">Характеристики</h4>
             <div class="characteristics__inner">
@@ -269,7 +269,7 @@
             </div>
         </div>
     </div>
-    <section class="price">
+    <section class="price" id="price">
         <div class="container">
             <div class="price__inner">
                 <form class="form">
@@ -289,7 +289,7 @@
                             <input class="form__input-radio" type="radio" name="radio">
                             <div class="form__bike">
                                 <img src="images/bike_grey.jpg" alt="" class="form__bike-img">
-                                <p class="form__bike-price">33999 руб.</p>
+                                <p class="form__bike-price"><span>33999 руб.</span></p>
                             </div>
                             <div class="form__radio-style form__radio-style-grey"></div>
                         </label>
@@ -297,7 +297,7 @@
                             <input class="form__input-radio" type="radio" name="radio" checked>
                             <div class="form__bike">
                                 <img src="images/bike_white.jpg" alt="" class="form__bike-img">
-                                <p class="form__bike-price">32999 руб.</p>
+                                <p class="form__bike-price"><span>32999 руб.</span></p>
                             </div>
                             <div class="form__radio-style form__radio-style-white"></div>
                         </label>
@@ -305,7 +305,7 @@
                             <input class="form__input-radio" type="radio" name="radio">
                             <div class="form__bike">
                                 <img src="images/bike_red.jpg" alt="" class="form__bike-img">
-                                <p class="form__bike-price">35999 руб.</p>
+                                <p class="form__bike-price"><span>35999 руб.</span></p>
                             </div>
                             <div class="form__radio-style form__radio-style-red"></div>
                         </label>
@@ -315,9 +315,33 @@
             </div>
         </div>
     </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <a href="#" class="footer__link">Политика конфиденциальности</a>
+                <div class="footer__social">
+                    <a href="" class="footer__social-link">
+                        <img class="footer__social-img" src="images/inst.svg" alt="instagram">
+                    </a>
+                    <a href="" class="footer__social-link">
+                        <img class="footer__social-img" src="images/facebook.svg" alt="facebook">
+                    </a>
+                </div>
+                <div class="footer__contacts">
+                    <a href="tel:8(495)3804688" class="footer__contacts-link">
+                        <img src="images/phone.svg" alt="phone" class="footer__contacts-img">
+                        <span>8(495)3804688</span>
+                    </a>
+                    <a href="mailto:elektrobike@gmail.com" class="footer__contacts-link">
+                        <img src="images/mail.svg" alt="mail" class="footer__contacts-img">
+                        <span>elektrobike@gmail.com</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>
-
 </html>

@@ -18,6 +18,9 @@ a {
 p {
     margin: 0;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-weight: 400;
     size: 14px;
@@ -55,7 +58,7 @@ body {
     color: #fff;
 }
 .bike {
-    padding: 100px 0 150px;
+    padding: 100px 0 0;
 }
 .bike__inner {
     display: flex;
@@ -91,9 +94,13 @@ body {
     background-color: #131313;
     color: #fff;
     margin-top: 80px;
-    padding: 28px 81px;
+    padding: 28px 71px 28px 81px;
     text-transform: uppercase;
     letter-spacing: 1.1em;
+    transition: all .3s;
+}
+.bike__link:hover {
+    background-color: #FF4040;
 }
 .bike-slider .slick-dots {
     right: 0;
@@ -146,7 +153,8 @@ body {
 }
 
 .info {
-    margin-bottom: 150px;
+    padding-top: 150px;
+    margin-bottom: 50px;
 }
 
 .info__inner {
@@ -180,6 +188,7 @@ body {
 }
 
 .characteristics {
+    padding-top: 100px;
     margin-bottom: 150px;
 }
 .characteristics__head {
@@ -313,7 +322,7 @@ body {
     background: #FF4040;
 }
 .form__btn {
-    padding: 28px 81px;
+    padding: 28px 71px 28px 81px;
     font-size: 20px;
     border: none;
     line-height: 24px;
@@ -322,4 +331,67 @@ body {
     text-transform: uppercase;
     letter-spacing: 1.1em;
     cursor: pointer;
+    transition: all .3s;
+}
+.form__btn:hover {
+    background-color: #FF4040;
+}
+.form__bike-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 32px;
+    top: 30px;
+    left: 0;
+    right: 0;
+    width: 220px;
+    height: 100px;
+    border: 1px solid #FF4040;
+    border-radius: 50%;
+    transform: translateX(-50%);
+}
+.form__bike-price::after {
+    content: "";
+    position: absolute;
+    font-size: 32px;
+    top: 10px;
+    left: 0;
+    width: 220px;
+    height: 100px;
+    border: 1px solid #FF4040;
+    border-radius: 50%;
+}
+footer {
+    background-color: #131313;
+    color: #fff;
+}
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+.footer__link {
+    font-size: 12px;
+    text-decoration: underline;
+    line-height: 14px;
+    text-transform: lowercase;
+}
+.footer__social-link:not(:last-child) {
+    margin-right: 28px;
+}
+.footer__contacts {
+    font-size: 12px;
+    line-height: 14px;
+}
+.footer__contacts-link {
+    display: flex;
+    align-items: center;
+}
+.footer__contacts-link:last-child {
+    margin-top: 10px;
+}
+.footer__contacts-img {
+    margin-right: 10px;
 }
